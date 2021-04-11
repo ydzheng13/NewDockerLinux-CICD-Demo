@@ -1,4 +1,12 @@
 # Docker
+- task: Kubernetes@1
+  inputs:
+    connectionType: 'Kubernetes Service Connection'
+    kubernetesServiceEndpoint: 'test 1-KubernetesDemo-Emplyee-default-1618152205281'
+    namespace: 'default'
+    command: 'apply'
+    secretType: 'dockerRegistry'
+    containerRegistryType: 'Azure Container Registry'
 # Build and push an image to Azure Container Registry
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
